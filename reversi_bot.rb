@@ -1152,10 +1152,10 @@ class Board
           text.insert("1.0",score.to_s+"枚差で白の勝ちです\n")
         elsif(score<0) and (@current_color=BLACK)
           score = -score
-          text.insert("1.0",score.to_s+"枚差で黒の勝ちです\n")
+          text.insert("1.0",score.to_s+"枚差で白の勝ちです\n")
         elsif(score<0) and (@current_color=WHITE)
           score = -score
-          text.insert("1.0",score.to_s+"枚差で白の勝ちです\n")
+          text.insert("1.0",score.to_s+"枚差で黒の勝ちです\n")
         elsif(score==0)
           text.insert("1.0","引き分けです\n")
         end
